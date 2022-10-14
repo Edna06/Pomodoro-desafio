@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+font-size: 62.5%;
+}
+
+body {
+font-size: 1.6rem;
+font-family: 'Roboto', sans-serif;
+
+height: 100vh;
+width: auto;
+
+display: grid;
+place-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+body .mode {
+  position: absolute;
+
+  left: 92.19%;
+  top: 8.89%;
+  transition: all 0.9s;
+}
+
+body .mode:hover{
+cursor: pointer;
+transform: scale(0.9);
+}
+
+main {
+  width: 82.1rem;
+  height: 33.6rem;
+  
+  display: flex;
+  justify-content: space-between
+}
+
+.timer {
+width: 31.7rem;
+padding: 6rem 0 5rem;
+}
+
+
+.timer span {
+margin-top: 7rem;
+
+font-weight: 500;
+font-size: 12rem;
+
+text-align: center;
+color: #323238;
+
+margin-bottom: 4.8rem;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings button {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  background-color: rgba(255, 253, 253, 0);
+
+  transition: all 0.6s;
+}
+
+.settings button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+
+.sound {
+  width: 29.5rem;
+  height: 33.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  flex-wrap: wrap;
+}
+
+.sound button {
+  width: 13rem;
+  height: 15.2rem;
+
+  background: hsla(240, 9%, 89%, 0.618);
+  border-radius: 2.4rem;
+  border: none;
+
+  transition: all 0.6s;
+}
+
+.sound button:hover {
+  cursor: pointer;
+  transform: scale(0.9); 
+  border: 2px solid rgba(1, 1, 1, 0.116);
+}
+
+
+.sound button.active svg path{
+  fill: rgb(255, 255, 255);
+}
+
+.sound button.active {
+  background-color: 
+  #02799D;
+}
+
+
+.sound button input#volume{
+  stroke: white;
+  color: white;
+
+  margin-top: 3rem;
+  width: 9rem;
+}
+
+
+/* input range */
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+
+  height: .5rem;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #1a191a;
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 1.8rem;
+  width: 2rem;
+  border-radius: 100rem;
+  background: #0f0e0e;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.6rem;
+}
+
+
+
+/* adicionando dark mode */
+
+.dark-mode {
+fill: #FFFFFF;
+}
+
+body.dark {
+  background: #000000;
+}
+
+main .dark span{
+color: white;
+}
+
+main .dark button svg  path{
+ fill: #C4C4CC;}
+
+.dark .sound button{
+background-color: #29292E;
+}
+
+.dark .sound button.active {
+  background-color: #0A3442;
+}
+
+.dark .sound button svg path{
+fill: #C4C4CC;
+}
+
+.dark .sound button.active svg path{
+  fill: #FFFFFF;
+}
+
+.dark .sound button input[type=range]::-webkit-slider-runnable-track {
+  background: #FFFFFF;
+  border-radius: .5rem;
+  border: 0px solid #FFFFFF;
+}
+
+.dark .sound button input[type=range]::-webkit-slider-thumb {
+  background: #faf9f9;
+}
