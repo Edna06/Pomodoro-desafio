@@ -122,39 +122,19 @@ margin-bottom: 4.8rem;
 }
 
 
-.sound button input#volume{
-  stroke: white;
-  color: white;
-
-  margin-top: 3rem;
-  width: 9rem;
-}
-
-
 /* input range */
 
-input[type=range] {
-  -webkit-appearance: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-
-  height: .5rem;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: #1a191a;
-  border: 0px solid #000101;
-}
-input[type=range]::-webkit-slider-thumb {
-  height: 1.8rem;
-  width: 2rem;
-  border-radius: 100rem;
-  background: #0f0e0e;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -0.6rem;
+input{
+  accent-color: #323238;
+  width: 90px;
+  margin-top: 20px;
 }
 
 
+/* active */
+.sound button.active input {
+  accent-color: #FFFFFF;
+}
 
 /* adicionando dark mode */
 
@@ -163,7 +143,8 @@ fill: #FFFFFF;
 }
 
 body.dark {
-  background: #000000;
+  background: #121214;
+  
 }
 
 main .dark span{
@@ -189,12 +170,7 @@ fill: #C4C4CC;
   fill: #FFFFFF;
 }
 
-.dark .sound button input[type=range]::-webkit-slider-runnable-track {
-  background: #FFFFFF;
-  border-radius: .5rem;
-  border: 0px solid #FFFFFF;
+.dark .sound button input {
+  accent-color: #FFFFFF;
 }
 
-.dark .sound button input[type=range]::-webkit-slider-thumb {
-  background: #faf9f9;
-}

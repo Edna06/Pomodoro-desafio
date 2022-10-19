@@ -1,5 +1,6 @@
 import {activeNatureCard, activeRainCard, activeRestaurantCard, activeFireCard} from "./cardsSound.js"
 import {lightMode, darkMode} from './dark-mode.js'
+import { countdown, buttonPlay, increaseTimeButton, incremetMinutes, decrementMinutes, decrementTimeButton } from './timer.js'
 
 // variáveis
 export const natureCard = document.querySelector('.nature-sound')
@@ -17,8 +18,6 @@ export const cards = document.querySelector('.cards')
 
 
 
-
-
 // light |dark mode
 buttonLightMode.addEventListener ('click', lightMode)
 buttonDarkMode.addEventListener ('click', darkMode)
@@ -30,7 +29,12 @@ rainCard.addEventListener('click', activeRainCard)
 restaurantCard.addEventListener('click', activeRestaurantCard)
 fireCard.addEventListener('click', activeFireCard)
 
+// ajustando o contador 
+buttonPlay.addEventListener ('click', countdown)
 
+increaseTimeButton.addEventListener('click', incremetMinutes)
+decrementTimeButton.addEventListener('click', decrementMinutes)
+  
 
 
 

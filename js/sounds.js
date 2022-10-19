@@ -11,6 +11,19 @@ export default function () {
   buttonPressAudioRestaurant.loop = true 
   buttonPressAudioFire.loop = true 
 
+
+
+
+
+// criando parametros 
+
+
+
+
+
+
+
+
   return {
    buttonPressAudioNature,
    buttonPressAudioRain,
@@ -18,3 +31,5 @@ export default function () {
    buttonPressAudioFire
   }
 }
+
+
