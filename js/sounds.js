@@ -1,9 +1,12 @@
-export default function () {
+export default function() {
 
   const buttonPressAudioNature = new Audio ('./assets/sounds/nature.wav')
   const buttonPressAudioRain = new Audio('./assets/sounds/rain.wav')
   const buttonPressAudioRestaurant = new Audio('./assets/sounds/restaurant.wav')
   const buttonPressAudioFire = new Audio('./assets/sounds/fire.wav')
+
+  const PressButton = new Audio('./assets/sounds/button-press.wav')
+  const timeClosed = new Audio('/assets/sounds/audios_kichen.wav')
 
 
   buttonPressAudioNature.loop = true
@@ -12,23 +15,13 @@ export default function () {
   buttonPressAudioFire.loop = true 
 
 
-
-
-
-// criando parametros 
-
-
-
-
-
-
-
-
   return {
    buttonPressAudioNature,
    buttonPressAudioRain,
    buttonPressAudioRestaurant, 
-   buttonPressAudioFire
+   buttonPressAudioFire,
+   PressButton,
+   timeClosed
   }
 }
 

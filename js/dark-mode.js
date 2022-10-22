@@ -1,4 +1,4 @@
-import {buttonLightMode, buttonDarkMode, body, timerViwer, cards} from './main.js'
+import {buttonLightMode, buttonDarkMode, body, timerViwer, cards} from './index.js'
 
 export function lightMode() {
   buttonLightMode.classList.add('hide')

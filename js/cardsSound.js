@@ -1,4 +1,4 @@
-import { natureCard, rainCard, restaurantCard, fireCard } from './main.js'
+import { natureCard, rainCard, restaurantCard, fireCard} from './index.js'
 import Sound from './sounds.js'
 
 const sound = Sound() // função construtora precisa ser executada
@@ -68,4 +68,8 @@ export function activeFireCard() {
   } else {
     sound.buttonPressAudioFire.pause()
   }
+}
+
+export function buttonPress() {
+   sound.PressButton.play()  
 }
