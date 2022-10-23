@@ -6,7 +6,7 @@ export default function() {
   const buttonPressAudioFire = new Audio('./assets/sounds/fire.wav')
 
   const PressButton = new Audio('./assets/sounds/button-press.wav')
-  const timeClosed = new Audio('/assets/sounds/audios_kichen.wav')
+  const timeClosed = new Audio('/assets/sounds/audios_kichen-timer.wav')
 
 
   buttonPressAudioNature.loop = true
