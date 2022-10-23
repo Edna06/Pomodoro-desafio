@@ -9,6 +9,8 @@ export const fireVolume = document.querySelector('.volFire')
 
 const sound = Sound() // função construtora precisa ser executada
 
+
+// ativando e desativando cards de som
 export function activeNatureCard() {
   natureCard.classList.toggle('active')
   rainCard.classList.remove('active')
@@ -76,24 +78,22 @@ export function activeFireCard() {
   }
 }
 
+// som ao pressionar buttons
 export function buttonPress() {
   sound.PressButton.play()
 }
 
 
-// vol dos inputs
+// vol of inputs
 export function natureSoundVol() {
   sound.volNature(natureVolume.value)
 }
-
 export function rainSoundVol() {
   sound.volRain(rainVolume.value)
 }
-
 export function restaurantSoundVol() {
   sound.volRestaurant(restaurantVolume.value)
 }
-
 export function fireSoundVol() {
   sound.volFire(fireVolume.value)
 }

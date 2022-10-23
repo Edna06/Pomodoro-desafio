@@ -13,7 +13,9 @@ import {
   restaurantSoundVol,
   fireSoundVol
 } from './cardsSound.js'
+
 import { lightMode, darkMode } from './dark-mode.js'
+
 import {
   countdown,
   buttonPlay,
@@ -29,7 +31,7 @@ import {
 
 import { playHidden, pauseHidden } from './controls.js'
 
-// variáveis
+// variáveis dos cards
 export const natureCard = document.querySelector('.nature-sound')
 export const rainCard = document.querySelector('.rain-sound')
 export const restaurantCard = document.querySelector('.restaurant-sound')
@@ -43,11 +45,12 @@ export const body = document.querySelector('body')
 export const timerViwer = document.querySelector('.timer')
 export const cards = document.querySelector('.cards')
 
+
+// executando as funções
 // light |dark mode
 buttonLightMode.addEventListener('click', () => {
   lightMode(), buttonPress()
 })
-
 buttonDarkMode.addEventListener('click', () => {
   darkMode(), buttonPress()
 })
@@ -79,8 +82,7 @@ rainCard.addEventListener('click', activeRainCard)
 restaurantCard.addEventListener('click', activeRestaurantCard)
 fireCard.addEventListener('click', activeFireCard)
 
-//  vol dos inputs 
-
+//  vol dos inputs
 natureVolume.addEventListener('input', natureSoundVol)
 rainVolume.addEventListener('input', rainSoundVol)
 restaurantVolume.addEventListener('input', restaurantSoundVol)
