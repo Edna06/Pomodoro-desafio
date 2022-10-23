@@ -10,7 +10,6 @@ export function pauseHidden() {
   buttonPause.classList.add('hide')
 }
 
-
 export function resetControls() {
  pauseHidden()
 }

@@ -5,15 +5,22 @@ export default function() {
   const buttonPressAudioRestaurant = new Audio('./assets/sounds/restaurant.wav')
   const buttonPressAudioFire = new Audio('./assets/sounds/fire.wav')
 
+
   const PressButton = new Audio('./assets/sounds/button-press.wav')
   const timeClosed = new Audio('/assets/sounds/audios_kichen-timer.wav')
-
 
   buttonPressAudioNature.loop = true
   buttonPressAudioRain.loop = true
   buttonPressAudioRestaurant.loop = true 
   buttonPressAudioFire.loop = true 
+  PressButton.volume = 0.3
+  timeClosed.volume = 0.5
 
+
+  const volNature = value => (buttonPressAudioNature.volume = value)
+  const volRain = value => (buttonPressAudioRain.volume = value)
+  const volRestaurant = value => (buttonPressAudioRestaurant.volume = value)
+  const volFire = value => (buttonPressAudioFire.volume = value)
 
   return {
    buttonPressAudioNature,
@@ -21,7 +28,11 @@ export default function() {
    buttonPressAudioRestaurant, 
    buttonPressAudioFire,
    PressButton,
-   timeClosed
+   timeClosed,
+   volNature,
+   volRain, 
+   volRestaurant,
+   volFire
   }
 }
 

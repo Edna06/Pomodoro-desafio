@@ -3,7 +3,15 @@ import {
   activeRainCard,
   activeRestaurantCard,
   activeFireCard,
-  buttonPress
+  buttonPress,
+  natureVolume,
+  rainVolume,
+  restaurantVolume,
+  fireVolume,
+  natureSoundVol,
+  rainSoundVol,
+  restaurantSoundVol,
+  fireSoundVol
 } from './cardsSound.js'
 import { lightMode, darkMode } from './dark-mode.js'
 import {
@@ -70,3 +78,10 @@ natureCard.addEventListener('click', activeNatureCard)
 rainCard.addEventListener('click', activeRainCard)
 restaurantCard.addEventListener('click', activeRestaurantCard)
 fireCard.addEventListener('click', activeFireCard)
+
+//  vol dos inputs 
+
+natureVolume.addEventListener('input', natureSoundVol)
+rainVolume.addEventListener('input', rainSoundVol)
+restaurantVolume.addEventListener('input', restaurantSoundVol)
+fireVolume.addEventListener('input', fireSoundVol)
