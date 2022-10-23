@@ -14,7 +14,7 @@ export default function() {
   buttonPressAudioRestaurant.loop = true 
   buttonPressAudioFire.loop = true 
   PressButton.volume = 0.3
-  timeClosed.volume = 0.5
+  timeClosed.volume = 1
 
 
   const volNature = value => (buttonPressAudioNature.volume = value)
