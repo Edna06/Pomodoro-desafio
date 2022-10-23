@@ -89,13 +89,13 @@ margin-bottom: 4.8rem;
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
   
   flex-wrap: wrap;
 }
 
-.sound button {
-  width: 13rem;
+.sound div {
+  width: 12.3rem;
   height: 15.2rem;
 
   background: hsla(240, 9%, 89%, 0.618);
@@ -105,18 +105,22 @@ margin-bottom: 4.8rem;
   transition: all 0.6s;
 }
 
-.sound button:hover {
+.sound div svg {
+ margin-top: 2.4rem;
+}
+
+.sound div:hover {
   cursor: pointer;
   transform: scale(0.9); 
   border: 2px solid rgba(1, 1, 1, 0.116);
 }
 
 
-.sound button.active svg path{
+.sound div.active svg path{
   fill: rgb(255, 255, 255);
 }
 
-.sound button.active {
+.sound div.active {
   background-color: 
   #02799D;
 }
@@ -132,7 +136,7 @@ input{
 
 
 /* active */
-.sound button.active input {
+.sound div.active input {
   accent-color: #FFFFFF;
 }
 
@@ -151,26 +155,26 @@ main .dark span{
 color: white;
 }
 
-main .dark button svg  path{
+main .dark div svg  path{
  fill: #C4C4CC;}
 
-.dark .sound button{
+.dark .sound div{
 background-color: #29292E;
 }
 
-.dark .sound button.active {
+.dark .sound div.active {
   background-color: #0A3442;
 }
 
-.dark .sound button svg path{
+.dark .sound div svg path{
 fill: #C4C4CC;
 }
 
-.dark .sound button.active svg path{
+.dark .sound div.active svg path{
   fill: #FFFFFF;
 }
 
-.dark .sound button input {
+.dark .sound div input {
   accent-color: #FFFFFF;
 }
 
