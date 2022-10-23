@@ -14,6 +14,7 @@ No JavaScript, foi posto em prática os conhecimentos sobre:
 * Padrão Factory e Injeção de dependências
 
 
-![Captura de tela de 2022-10-22 16-08-50](https://user-images.githubusercontent.com/102126245/197421077-3e9d8b00-31f3-48c8-b83c-d9024d22c6da.png)
+Acesse pelo link: https://edna06.github.io/Pomodoro-desafio/
 
+![Captura de tela de 2022-10-23 18-57-04](https://user-images.githubusercontent.com/102126245/197421275-3537dac4-2e4e-44cd-a1a9-f9521e4ef639.png)
 
